@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/* CSS Document */
+*{ padding: 0; margin: 0; }
+
+.wrapper{
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 0.6fr repeat(3, 1fr) repeat(4, 0.7fr);
+}
+
+.item{}
+
+.header{
+	grid-column: 1/5;
+	grid-row: 1/2;
+	background: #2A373E;
+	border-bottom: rgba(39,39,39,0.82);
+	box-shadow: 0px 10px 10px 1px rgba(39,39,39,0.82);
+	z-index: 1;
+	display: flex;
+	align-items: center;
+}
+.side{
+	display: flex;
+	align-items: center;
+	height: 100%;
+	width: 10%;
+}
+
+.side::before{
+	content: "";
+	width: 23px;
+	height: 3px;
+	border-top: 9px double #ffffff;
+	border-bottom: 3px solid #ffffff;
+	position: absolute;
+	left: 10px;
+}
+
+.title{
+	color: #FFFFFF;
+	font-size: 20px;
+}
+
+.price{
+	background: #2A373E;
+	border-bottom: 2px solid #32414a
+}
+
+.price1{
+	grid-column: 1/5;
+	grid-row: 2/3;	
+}
+.price2{
+	grid-column: 1/5;
+	grid-row: 3/4;
+}
+.price3{
+	grid-column: 1/5;
+	grid-row: 4/5;
+	border-bottom: none;
+}
+
+.number{
+	background: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 35px;
+}
+.seven{
+	grid-column: 1/2;
+	grid-row: 5/6;
+}
+.eight{
+	grid-column: 2/3;
+	grid-row: 5/6;
+}
+.nine{
+	grid-column: 3/4;
+	grid-row: 5/6;
+}
+.four{
+	grid-column: 1/2;
+	grid-row: 6/7;
+}
+.five{
+	grid-column: 2/3;
+	grid-row: 6/7;
+}
+.six{
+	grid-column: 3/4;
+	grid-row: 6/7;
+}
+.one{
+	grid-column: 1/2;
+	grid-row: 7/8;
+}
+.two{
+	grid-column: 2/3;
+	grid-row: 7/8;
+}
+.three{
+	grid-column: 3/4;
+	grid-row: 7/8;
+}
+.zero{
+	grid-column: 2/3;
+	grid-row: 8/9;
+}
+
+.operation{
+	background: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 35px;
+}
+.dot{
+	grid-column: 1/2;
+	grid-row: 8/9;
+}
+
+.delate{
+	grid-column: 3/4;
+	grid-row: 8/9;
+}
+
+.clean{
+	grid-column: 4/5;
+	grid-row: 5/7;
+	border-left: 1px solid #e1e1e1;
+}
+
+.ok{
+	grid-column: 4/5;
+	grid-row: 7/9;
+	border-left: 1px solid #e1e1e1;
+	height: 90%;
+}
