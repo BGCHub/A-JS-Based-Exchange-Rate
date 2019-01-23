@@ -44,20 +44,29 @@
 	font-size: 20px;
 }
 
-.price{
+.monitor{
 	background: #2A373E;
-	border-bottom: 2px solid #32414a
+	border-bottom: 2px solid #32414a;
+	display: flex;
+	justify-content: flex-end;
+	align-items:center;
+	padding-right: 1rem;
+	font-size: 1.5rem;
+	color: #ffffff;
+	transition: all 0.7s;
 }
 
-.price1{
+.monitor_1{
 	grid-column: 1/5;
 	grid-row: 2/3;	
 }
-.price2{
+
+.monitor_2{
 	grid-column: 1/5;
 	grid-row: 3/4;
 }
-.price3{
+
+.monitor_3{
 	grid-column: 1/5;
 	grid-row: 4/5;
 	border-bottom: none;
