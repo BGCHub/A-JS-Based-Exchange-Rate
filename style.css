@@ -145,9 +145,28 @@
 	grid-row: 8/9;
 }
 
-.delate{
+.delete{
 	grid-column: 3/4;
 	grid-row: 8/9;
+}
+
+.delete::before,.delete::after{
+	content: " ";
+	position: relative;
+}
+
+.delete::before{
+	border-left: 3px solid;
+	height: 20px;
+	bottom: 7px;
+	left: 8.5px;
+	transform: rotate(40deg);
+}
+
+.delete::after{
+	border-bottom: 3px solid;
+	width: 40px;
+	/*transform: rotate(40deg);*/
 }
 
 .clean{
@@ -161,4 +180,23 @@
 	grid-row: 7/9;
 	border-left: 1px solid #e1e1e1;
 	height: 90%;
+}
+
+.ok::before,.ok::after{
+	content: " ";
+	position: relative;
+}
+
+.ok::before{
+	border-bottom: 3px solid;
+	width: 25px;
+	top: 12px;
+	left: -11px;
+	transform: rotate(40deg);
+}
+
+.ok::after{
+	border-left: 3px solid;
+	height: 50px;
+	transform: rotate(40deg);
 }
