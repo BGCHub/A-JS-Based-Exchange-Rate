@@ -48,12 +48,17 @@
 	background: #2A373E;
 	border-bottom: 2px solid #32414a;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: flex-start;
 	align-items:center;
 	padding-right: 1rem;
 	font-size: 1.5rem;
 	color: #ffffff;
 	transition: all 0.3s;
+}
+
+.monitor p{
+	color: #768084;
+	font-size: 25px;
 }
 
 .monitor_1{
@@ -70,6 +75,14 @@
 	grid-column: 1/5;
 	grid-row: 4/5;
 	border-bottom: none;
+}
+
+.flag{
+	margin: 0 15px;
+}
+
+.monitor-content{
+	margin-left: auto;
 }
 
 .number{
