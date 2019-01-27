@@ -61,7 +61,7 @@ window.onload=function(){
 	                countries[i].style.cssText+="display: none";
 	            } else if(x>0){
 	            	console.log("right");
-	            	monitors[i].style.cssText+="margin-left: 200px;";
+	            	monitors[i].style.cssText+="margin-left: 100px;";
 	            	countries[i].style.cssText+="display: inline";
 	            }
 	        }
