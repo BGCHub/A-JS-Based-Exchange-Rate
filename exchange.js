@@ -18,6 +18,7 @@ window.onload=function(){
 	var monitors=document.getElementsByClassName("monitor");
 	var monitorContent=document.getElementsByClassName("monitor-content");
 	var operations=document.getElementsByClassName("operation");
+	var countries=document.getElementsByClassName("select");
 
 	var isMonitor=new Array(false,false,false);
 	var f="",ff=0;
@@ -31,16 +32,40 @@ window.onload=function(){
 			for(let i=0;i<3;i++){
 				monitors[i].style.backgroundColor="#2A373E";
 				monitors[i].style.fontSize="1.5rem";
-				monitors[i].style.cssText+="margin: 0;";
+				monitors[i].style.cssText+="margin: 0; color: #768084;";
 				isMonitor[i]=false;
 			}
 			isMonitor[i]=true;
 			monitors[i].style.backgroundColor="#3a4c55";
 			monitors[i].style.fontSize="2rem";
-			monitors[i].style.cssText+="margin: -8px; margin-right: 0;";
+			monitors[i].style.cssText+="margin: -8px; margin-right: 0; color: #ffffff;";
 			monitorNum=i;
 			f="";
 		}
+
+		var startPoint = null;
+	    monitors[i].addEventListener("touchstart",function(e){
+	        var e = e||window.event;
+	        startPoint = e.touches[0];
+	    });
+	    monitors[i].addEventListener("touchend",function(e){
+	        var e=e||window.event;
+	        var endPoint = e.changedTouches[0];
+	        var x = endPoint.clientX - startPoint.clientX;
+	        var d = 10; // initialize slide distance
+	        if(Math.abs(x)>d){
+	            if(x<=0){
+	                console.log("left");
+	                monitors[i].style.cssText+="margin-left: 0;";
+	                countries[i].style.cssText+="display: none";
+	            } else if(x>0){
+	            	console.log("right");
+	            	monitors[i].style.cssText+="margin-left: 200px;";
+	            	countries[i].style.cssText+="display: inline";
+	            }
+	        }
+	    });
+
 	}
 
 	for(let i=0;i<10;i++){
