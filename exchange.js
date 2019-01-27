@@ -19,6 +19,7 @@ window.onload=function(){
 	var monitorContent=document.getElementsByClassName("monitor-content");
 	var operations=document.getElementsByClassName("operation");
 	var countries=document.getElementsByClassName("select");
+	var cName=document.getElementsByClassName("name");
 
 	var isMonitor=new Array(false,false,false);
 	var f="",ff=0;
@@ -68,6 +69,15 @@ window.onload=function(){
 
 	}
 
+	for(let i=0;i<3;i++){
+		countries[i].onchange=function(){
+			cName[i].innerHTML=countries[i].value;
+			var aa=2.4567876543456;
+			console.log(aa.toFixed(3));
+			console.log(aa.toPrecision(3));
+		}
+	}
+
 	for(let i=0;i<10;i++){
 		buttons[i].onclick=function(){
 			ff=buttons[i].innerHTML;
@@ -97,16 +107,29 @@ window.onload=function(){
 	operations[3].onclick=function(){
 		if(monitorNum==0){
 			var m0=monitorContent[monitorNum].innerHTML;
-			monitorContent[1].innerHTML=m0/USDCNY;
-			monitorContent[2].innerHTML=monitorContent[1].innerHTML*USDEUR;
+			m0=m0/USDCNY;
+			m0=m0.toFixed(4);
+			monitorContent[1].innerHTML=m0;
+			m0=m0*USDEUR;
+			m0=m0.toFixed(4);
+			monitorContent[2].innerHTML=m0;
 		} else if(monitorNum==1){
 			var m1=monitorContent[monitorNum].innerHTML;
-			monitorContent[0].innerHTML=m1*USDCNY;
-			monitorContent[2].innerHTML=m1*USDEUR;
+			var m11=m1;
+			m1=m1*USDCNY;
+			m1=m1.toFixed(4);
+			monitorContent[0].innerHTML=m1;
+			m11=m11*USDEUR;
+			m11=m11.toFixed(4);
+			monitorContent[2].innerHTML=m11;
 		} else if(monitorNum==2){
 			var m2=monitorContent[monitorNum].innerHTML;
-			monitorContent[1].innerHTML=m2/USDEUR;
-			monitorContent[0].innerHTML=monitorContent[1].innerHTML*USDCNY;
+			m2=m2/USDEUR
+			m2=m2.toFixed(4);
+			monitorContent[1].innerHTML=m2;
+			m2=m2*USDCNY;
+			m2=m2.toFixed(4);
+			monitorContent[0].innerHTML=m2;
 		}
 	}
 
