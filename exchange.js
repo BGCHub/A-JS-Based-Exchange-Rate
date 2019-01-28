@@ -62,16 +62,14 @@ window.onload=function(){
 
 		monitors[i].onclick=function(){
 			for(let i=0;i<3;i++){
-				monitors[i].style.backgroundColor="#2A373E";
 				monitors[i].style.fontSize="1.5rem";
-				monitors[i].style.cssText+="margin: 0; color: #768084;";
+				monitors[i].style.cssText+="margin: 0; color: #67a0fc; background: linear-gradient(90deg, #a1c4fd 0%, #c2e9fb 100%);";
 				isMonitor[i]=false;
 				countries[i].style.cssText+="display: none";
 			}
 			isMonitor[i]=true;
-			monitors[i].style.backgroundColor="#3a4c55";
 			monitors[i].style.fontSize="2rem";
-			monitors[i].style.cssText+="margin: -8px; margin-right: 0; color: #ffffff;";
+			monitors[i].style.cssText+="margin: -8px; margin-right: 0; color: #ffffff; background-image: linear-gradient(120deg, #8eb8fd 0%, #b0e2fa 100%);";
 			countries[i].style.cssText+="display: none";
 			monitorNum=i;
 			f="";

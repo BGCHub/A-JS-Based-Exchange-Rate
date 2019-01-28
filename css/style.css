@@ -8,7 +8,7 @@
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: 0.6fr repeat(3, 1fr) repeat(4, 0.7fr);
-	background: #4a606d;
+	background: #c7dcfe;
 }
 
 .item{}
@@ -16,14 +16,16 @@
 .header{
 	grid-column: 1/5;
 	grid-row: 1/2;
-	background: #2A373E;
-	border-bottom: rgba(39,39,39,0.82);
-	box-shadow: 0px 10px 10px 1px rgba(39,39,39,0.82);
+	background-image: linear-gradient(120deg, #8eb8fd 0%, #b0e2fa 100%);
+	border-bottom: rgba(84,148,251,0.82);
+	box-shadow: 0px 5px 10px 1px rgba(84,148,251,0.82);
 	z-index: 1;
 	display: flex;
 	align-items: center;
+	padding-left: 10px;
 }
-.side{
+
+/*.side{
 	display: flex;
 	align-items: center;
 	height: 100%;
@@ -38,7 +40,7 @@
 	border-bottom: 3px solid #ffffff;
 	position: absolute;
 	left: 10px;
-}
+}*/
 
 .title{
 	color: #FFFFFF;
@@ -46,13 +48,13 @@
 }
 
 .monitor{
-	background: #2A373E;
-	border-bottom: 2px solid #32414a;
+	background: linear-gradient(90deg, #a1c4fd 0%, #c2e9fb 100%);
+	border-bottom: 2px solid #dbe8fe;
 	display: flex;
 	justify-content: flex-start;
 	align-items:center;
 	font-size: 20px;
-	color: #768084;
+	color: #67a0fc;
 	transition: all 0.3s;
 }
 
