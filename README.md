@@ -1,5 +1,7 @@
 # A javascript based exchange rate
 
+**Demo: [Exchange Rate](https://bgchub.github.io/ajsbasedexchangerate/)**
+
 CSS: display: grid; + Responsive
 
 Javascript: JQuery.ajax
