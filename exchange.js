@@ -42,7 +42,6 @@ window.onload=function(){
 		{country: "USDTWD", value: USDTWD}, 
 		{country: "USDVND", value: USDVND}
 	];
-	console.log(data[3].value);
 
 	var buttons=document.getElementsByClassName("number");
 	var monitors=document.getElementsByClassName("monitor");
@@ -87,11 +86,9 @@ window.onload=function(){
 	        var d = 10; // initialize slide distance
 	        if(Math.abs(x)>d){
 	            if(x<=0){
-	                console.log("left");
 	                monitors[i].style.cssText+="margin-left: 0;";
 	                countries[i].style.cssText+="display: none";
 	            } else if(x>0){
-	            	console.log("right");
 	            	monitors[i].style.cssText+="margin-left: 100px;";
 	            	countries[i].style.cssText+="display: flex";
 	            }
