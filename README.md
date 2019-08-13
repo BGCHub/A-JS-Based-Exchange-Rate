@@ -1,11 +1,11 @@
 # A javascript based exchange rate
 
-**Demo: [Exchange Rate](https://bgchub.github.io/ajsbasedexchangerate/)**
+**Mobile Only** (Because of the sliding gesture)
 
-CSS: display: grid; + Responsive
+Demo: [Exchange Rate](https://bgchub.github.io/ajsbasedexchangerate/)
 
-Javascript: JQuery.ajax
+grid display, Responsive, JQuery.ajax
 
-API: [currencylayer](https://currencylayer.com/)
+API: [currencylayer](https://currencylayer.com/) (disabled)
 
 Icon: [flag-icon-css](https://github.com/lipis/flag-icon-css)
