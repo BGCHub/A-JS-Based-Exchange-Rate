@@ -2,7 +2,7 @@
 
 **Mobile Only** (Because of the sliding gesture)
 
-Demo: [Exchange Rate](https://bgchub.github.io/ajsbasedexchangerate/)
+Demo: [Exchange Rate](https://bgchub.github.io/A-JS-Based-Exchange-Rate/)
 
 grid display, Responsive, JQuery.ajax
 
