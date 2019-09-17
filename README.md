@@ -1,8 +1,8 @@
-# A javascript based exchange rate
+# A javascript exchange rate
 
 **Mobile Only** (Because of the sliding gesture)
 
-Demo: [Exchange Rate](https://bgchub.github.io/A-JS-Based-Exchange-Rate/)
+Demo: [Exchange Rate](https://rtkcode.github.io/A-JS-Exchange-Rate/)
 
 grid display, Responsive, JQuery.ajax
 
